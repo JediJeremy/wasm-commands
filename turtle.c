@@ -31,6 +31,21 @@ void turtle_spin(int speed) {
 
 // main
 int main() {
-  echo("echo world!\n");
+  // echo("echo world!\n");
+  // square dance
+  turtle_forward(50);  turtle_wait(1000);
+  turtle_stop();       turtle_wait(500);
+  turtle_strafe(50);   turtle_wait(1000);
+  turtle_stop();       turtle_wait(500);
+  turtle_forward(-50); turtle_wait(1000);
+  turtle_stop();       turtle_wait(500);
+  turtle_strafe(-50);  turtle_wait(1000);
+  turtle_stop();       turtle_wait(500);
+  // do a spin
+  turtle_spin(-50);    turtle_wait(1000);
+  turtle_stop();       turtle_wait(500);
+  turtle_spin(50);     turtle_wait(1000);
+  turtle_stop();       turtle_wait(500);
+  // all done
   return 0;
 }
